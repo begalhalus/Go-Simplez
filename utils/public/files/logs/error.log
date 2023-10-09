@@ -1,0 +1,26 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] POST   /role/v1/create           --> go-simple/roles/handler.(*RolesHandler).create-fm (5 handlers)
+[GIN-debug] GET    /role/v1/detail/:id       --> go-simple/roles/handler.(*RolesHandler).detail-fm (5 handlers)
+[GIN-debug] GET    /role/v1/list             --> go-simple/roles/handler.(*RolesHandler).list-fm (5 handlers)
+[GIN-debug] PUT    /role/v1/update/:id       --> go-simple/roles/handler.(*RolesHandler).update-fm (5 handlers)
+[GIN-debug] DELETE /role/v1/delete/:id       --> go-simple/roles/handler.(*RolesHandler).delete-fm (5 handlers)
+[GIN-debug] POST   /user/v1/login            --> go-simple/users/handler.(*UsersHandler).login-fm (4 handlers)
+[GIN-debug] POST   /user/v1/create           --> go-simple/users/handler.(*UsersHandler).create-fm (5 handlers)
+[GIN-debug] GET    /user/v1/detail/:id       --> go-simple/users/handler.(*UsersHandler).detail-fm (5 handlers)
+[GIN-debug] GET    /user/v1/list             --> go-simple/users/handler.(*UsersHandler).list-fm (5 handlers)
+[GIN-debug] PUT    /user/v1/update/:id       --> go-simple/users/handler.(*UsersHandler).update-fm (5 handlers)
+[GIN-debug] DELETE /user/v1/delete/:id       --> go-simple/users/handler.(*UsersHandler).delete-fm (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9001
+[GIN] 2023/10/09 - 16:56:11 | 401 |     308.333µs |             ::1 | GET      "/user/v1/list"
+[GIN] 2023/10/09 - 16:56:12 | 401 |      31.417µs |             ::1 | GET      "/user/v1/list"
+[GIN] 2023/10/09 - 16:56:15 | 200 |  261.120833ms |             ::1 | GET      "/user/v1/list"
+[GIN] 2023/10/09 - 16:56:17 | 200 |  255.221667ms |             ::1 | GET      "/role/v1/list?page=2"
